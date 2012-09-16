@@ -1,0 +1,22 @@
+A quick hacky set of shell scripts to test Kashoo's JSON/XML API
+- see https://api.kashoo.com/
+
+getAuthToken.sh userid
+- creates an APITOKEN file for you, from your user and password
+
+getBusinessNumber.sh
+- from your APITOKEN file, prints out your BUSINESS_ID
+- YOU need to save this to a file called BUSINESS_ID 
+
+testConnect.sh
+- calls the https://www.kashoo.com/api/users/me/businesses end point
+- per https://api.kashoo.com/rest.users.me.businesses.html
+- see http://support.kashoo.com/customer/portal/questions/115631-api-error
+
+callAPI.sh	      
+- calls any endpoint, defaults to transfers
+- see the REST list on https://api.kashoo.com
+
+
+TO DO
+- I should have used a decent scripting language and a REST client (not curl)
