@@ -22,8 +22,11 @@ callAPI.sh
 
 Connects to SERVERMOUNTPOINT
 - defaults to https://api-kashoo.apigee.com/api
-
-If you use https://api-kashoo.apigee.com  instead of https://api.kashoo.com  you should see the exact same behavior but we'll have the Apigee proxy to assist with debugging. Unfortunately they do not yet support private domain names on SSL but they're working on it so eventually it will be on all requests to api.kashoo.com  as well but this alternate entry point gets us that functionality now. - Chuck Clark (Kashoo CTO)
+- because "If you use https://api-kashoo.apigee.com  instead of https://api.kashoo.com  
+you should see the exact same behavior but we'll have the Apigee proxy to assist with debugging. 
+Unfortunately they do not yet support private domain names on SSL but they're working on it so 
+eventually it will be on all requests to api.kashoo.com  as well but this alternate entry point
+gets us that functionality now. - Chuck Clark (Kashoo CTO)"
 
 
 TO DO
