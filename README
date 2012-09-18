@@ -1,3 +1,6 @@
+*kashoo-API-101*
+- Martin Cleaver (just a Kashoo user)
+
 A quick hacky set of shell scripts to test Kashoo's JSON/XML API
 - see https://api.kashoo.com/
 
@@ -17,6 +20,12 @@ callAPI.sh
 - calls any endpoint, defaults to transfers
 - see the REST list on https://api.kashoo.com
 
+Connects to SERVERMOUNTPOINT
+- defaults to https://api-kashoo.apigee.com/api
+
+If you use https://api-kashoo.apigee.com  instead of https://api.kashoo.com  you should see the exact same behavior but we'll have the Apigee proxy to assist with debugging. Unfortunately they do not yet support private domain names on SSL but they're working on it so eventually it will be on all requests to api.kashoo.com  as well but this alternate entry point gets us that functionality now. - Chuck Clark (Kashoo CTO)
+
 
 TO DO
 - I should have used a decent scripting language and a REST client (not curl)
+-- https://github.com/micha/resty is a candidate (as it uses curl, so commonly available, but hides idiosyncrasies
